@@ -6,7 +6,7 @@ import CTAButton from "@/components/CTAButton"
 
 const Index = () => {
     return (
-        <div className="text-white text-center flex flex-col items-center gap-10 h-screen justify-center pt-16">
+        <div className="text-white text-center flex flex-col items-center gap-10 h-screen justify-center pt-16 px-2">
             <h1 className="text-3xl sm:text-6xl sm:w-2/3 relative">
                 Un sitio Web que
                 <span className="relative p-2">

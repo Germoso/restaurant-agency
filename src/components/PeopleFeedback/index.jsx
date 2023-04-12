@@ -4,6 +4,9 @@ import Message from "@/components/icons/Message"
 import RightArrow from "@/components/icons/RightArrow"
 import Card from "./Card"
 import { AnimatePresence } from "framer-motion"
+import profile1 from "../../../public/profile-1.jpg"
+import profile2 from "../../../public/profile-2.jpg"
+import profile3 from "../../../public/profile-3.jpg"
 
 const Index = () => {
     const [currentCard, setCurrentCard] = useState(0)
@@ -12,8 +15,9 @@ const Index = () => {
             active: true,
             title: "Ana García",
             description:
-                "Trabajar con la agencia ha sido una experiencia maravillosa. Desde la primera consulta hasta el lanzamiento del sitio web, el equipo ha sido profesional, amable y muy eficiente. ¡El resultado final ha sido espectacular!",
+                "Desde la primera consulta hasta el lanzamiento del sitio web, el equipo ha sido profesional, amable y muy eficiente. ¡El resultado final ha sido espectacular!",
             subtitle: "",
+            photo: profile3,
         },
         {
             active: false,
@@ -21,6 +25,7 @@ const Index = () => {
             description:
                 "La agencia de diseño web para restaurantes no solo nos proporcionó un sitio web impresionante, sino que también nos ayudó a mejorar nuestra estrategia de marketing digital. ¡Gracias por todo el apoyo y la orientación!",
             subtitle: "",
+            photo: profile2,
         },
         {
             active: false,
@@ -28,6 +33,7 @@ const Index = () => {
             description:
                 "Estamos encantados con el nuevo sitio web que nos ha diseñado la agencia. Han hecho un trabajo increíble al capturar la esencia de nuestro restaurante y destacar nuestros platos de manera visual. ¡Altamente recomendados!",
             subtitle: "",
+            photo: profile1,
         },
     ])
 
