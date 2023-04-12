@@ -6,7 +6,7 @@ const Index = ({ children }) => {
     return (
         <>
             <Navbar />
-            <div className="bg-primary">{children}</div>
+            <div className="bg-primary w-full">{children}</div>
             <Footer />
         </>
     )

@@ -29,7 +29,7 @@ const Navbar = () => {
                             initial={{ x: "100%" }}
                             animate={{ x: 0 }}
                             exit={{ x: "100%" }}
-                            className="z-10 h-screen w-full absolute top-0 left-0 py-20 bg-secondary px-10"
+                            className="z-10 h-screen w-full fixed top-0 left-0 py-20 bg-secondary px-10"
                         >
                             <motion.button
                                 transition={{ delay: 0.25, duration: 0.25 }}
