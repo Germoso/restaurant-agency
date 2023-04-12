@@ -7,22 +7,22 @@ import CTAButton from "@/components/CTAButton"
 const Index = () => {
     return (
         <div className="text-white text-center flex flex-col items-center gap-10 h-screen justify-center pt-16">
-            <h1 className="text-3xl sm:text-7xl sm:w-2/3">
-                Digital
+            <h1 className="text-3xl sm:text-6xl sm:w-2/3 relative">
+                Un sitio Web que
                 <span className="relative p-2">
-                    Agency
-                    <div className={"absolute top-3 left-0 sm:top-5"}>
+                    Deleita
+                    <div className={"absolute top-[10px] left-[-2px] w-[102%] sm:w-[104%] sm:left-[-4] sm:top-[16px]"}>
                         <WordOutline />
                     </div>
                 </span>
-                With Solid Design
+                sus Clientes
                 <div className="w-12 inline-block ml-2 sm:w-20">
                     <HeroIcon />
                 </div>
             </h1>
             <p className="opacity-75 text-base">
-                We provide various services to make your business grow and get bigger. Your satisfaction is our first
-                priority.
+                Diseñamos su sitio web para mejorar la experiencia del usuario y reflejar la personalidad de su
+                restaurante.
             </p>
             <div className="w-20 relative bottom-5 left-20">
                 <Spiral />

@@ -8,24 +8,23 @@ import PeopleFeedback from "@/components/PeopleFeedback"
 
 const services = [
     {
-        title: "Web Content",
+        title: "Web Personalizada",
         content:
-            "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+            "Sitio web personalizado que se adapta a las necesidades y la marca de su restaurante, utilizando elementos visuales y gráficos que reflejen la identidad visual de su negocio.",
     },
     {
-        title: "Web Content",
+        title: "Mantenimiento y soporte",
         content:
-            "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+            "Ofrecimiento de mantenimiento y soporte continuo para el sitio web del restaurante, incluyendo actualizaciones de software, correcciones de errores y solución de problemas.",
     },
     {
-        title: "Web Content",
+        title: "Optimización para motores de búsqueda (SEO)",
         content:
-            "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+            "Optimización de contenido para que el sitio web del restaurante tenga una mejor visibilidad en los resultados de búsqueda.",
     },
     {
-        title: "Web Content",
-        content:
-            "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+        title: "Diseño de menús digitales",
+        content: " Creación de menús digitales interactivos para el sitio web del restaurante.",
     },
 ]
 

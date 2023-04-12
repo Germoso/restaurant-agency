@@ -1,7 +1,7 @@
 import React from "react"
 import { motion } from "framer-motion"
 
-const Card = ({ active, title }) => {
+const Card = ({ active, data }) => {
     return (
         <>
             {/* MOBILE */}
@@ -15,15 +15,11 @@ const Card = ({ active, title }) => {
                 <div className="flex gap-3">
                     <div className="w-10 h-10 bg-cream rounded-full"></div>
                     <div>
-                        <h4 className="text-base">{title}</h4>
-                        <span className="text-xs opacity-60 uppercase">CEO</span>
+                        <h4 className="text-base">{data.title}</h4>
+                        <span className="text-xs opacity-60 uppercase">{data.subtitle}</span>
                     </div>
                 </div>
-                <p className="mt-6">
-                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
-                    duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Velit officia consequat
-                    duis enim velit mollit.
-                </p>
+                <p className="mt-6">{data.description}</p>
             </motion.div>
             {/* DESKTOP */}
             <motion.div
@@ -38,15 +34,11 @@ const Card = ({ active, title }) => {
                 <div className="flex gap-3">
                     <div className="w-10 h-10 bg-cream rounded-full"></div>
                     <div>
-                        <h4 className="text-base">{title}</h4>
-                        <span className="text-xs opacity-60 uppercase">CEO</span>
+                        <h4 className="text-base">{data.title}</h4>
+                        <span className="text-xs opacity-60 uppercase">{data.subtitle}</span>
                     </div>
                 </div>
-                <p className="mt-6">
-                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
-                    duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Velit officia consequat
-                    duis enim velit mollit.
-                </p>
+                <p className="mt-6">{data.description}</p>
             </motion.div>
         </>
     )

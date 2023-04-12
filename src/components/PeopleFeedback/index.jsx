@@ -10,14 +10,24 @@ const Index = () => {
     const [data, setData] = useState([
         {
             active: true,
-            title: "HOLA",
+            title: "Ana García",
+            description:
+                "Trabajar con la agencia ha sido una experiencia maravillosa. Desde la primera consulta hasta el lanzamiento del sitio web, el equipo ha sido profesional, amable y muy eficiente. ¡El resultado final ha sido espectacular!",
+            subtitle: "",
         },
         {
             active: false,
-            title: "como",
+            title: "Carlos Hernández",
+            description:
+                "La agencia de diseño web para restaurantes no solo nos proporcionó un sitio web impresionante, sino que también nos ayudó a mejorar nuestra estrategia de marketing digital. ¡Gracias por todo el apoyo y la orientación!",
+            subtitle: "",
         },
         {
             active: false,
+            title: "Isabel Ramos",
+            description:
+                "Estamos encantados con el nuevo sitio web que nos ha diseñado la agencia. Han hecho un trabajo increíble al capturar la esencia de nuestro restaurante y destacar nuestros platos de manera visual. ¡Altamente recomendados!",
+            subtitle: "",
         },
     ])
 
@@ -49,9 +59,9 @@ const Index = () => {
     }
 
     return (
-        <div className="text-white px-6 pb-20">
+        <div className="text-white px-6 pb-20 mx-auto container">
             <div className="flex justify-between items-end pt-20 pb-12 sm:justify-start sm:items-center sm:gap-6">
-                <H2 className={"w-3/4 sm:text-5xl sm:w-auto"}>What people are saying about us</H2>
+                <H2 className={"w-3/4 sm:text-5xl sm:w-auto"}>Lo que nuestros clientes piensan de nosotros</H2>
                 <div className="w-16 sm:w-20">
                     <Message />
                 </div>
@@ -61,7 +71,7 @@ const Index = () => {
                 <div className="hidden sm:flex gap-9">
                     <AnimatePresence>
                         {data.map((el, index) => (
-                            <Card key={index} title={el.title} active={el.active} />
+                            <Card key={index} data={el} active={el.active} />
                         ))}
                     </AnimatePresence>
                 </div>
@@ -70,7 +80,7 @@ const Index = () => {
                     <AnimatePresence mode="wait">
                         {data.map((el, index) => {
                             {
-                                return el.active === true && <Card key={index} title={el.title} />
+                                return el.active === true && <Card key={index} data={el} />
                             }
                         })}
                     </AnimatePresence>
@@ -78,10 +88,10 @@ const Index = () => {
             </div>
             <div className="flex justify-end">
                 <button onClick={prev}>
-                    <RightArrow size="64px" className="rotate-180" />
+                    <RightArrow size="80px" className="rotate-180" />
                 </button>
                 <button onClick={next}>
-                    <RightArrow size="64px" />
+                    <RightArrow size="80px" />
                 </button>
             </div>
         </div>
