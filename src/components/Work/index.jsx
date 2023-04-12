@@ -1,6 +1,6 @@
 import React from "react"
 import H2 from "@/components/StyledComponents/H2"
-import Star from "@/components/icons/star"
+import Star from "@/components/icons/Star"
 import CTAButton from "../CTAButton"
 
 const Index = () => {
