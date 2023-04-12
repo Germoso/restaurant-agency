@@ -8,7 +8,7 @@ const Index = () => {
             <div className="sm:flex sm:items-start sm:justify-between container mx-auto w-full py-14 ">
                 <div className="flex flex-col">
                     <Logo />
-                    <span className="mt-2">Copyright © 2022 Design UI Template.</span>
+                    <span className="mt-2">Copyright© 2023, SaboresWeb</span>
                     <span>All rights reserved</span>
                     <div className="mt-4">
                         <Instagram />
