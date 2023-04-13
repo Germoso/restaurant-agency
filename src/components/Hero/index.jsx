@@ -8,7 +8,7 @@ const Index = () => {
     return (
         <div className="text-white text-center flex flex-col items-center gap-10 h-screen justify-center pt-16 px-2">
             <h1 className="text-3xl sm:text-6xl sm:w-2/3 relative">
-                Un sitio Web que
+                Una Agencia que
                 <span className="relative p-2">
                     Deleita
                     <div className={"absolute top-[10px] left-[-2px] w-[102%] sm:w-[104%] sm:left-[-4] sm:top-[16px]"}>
