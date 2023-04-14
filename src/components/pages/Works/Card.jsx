@@ -16,7 +16,11 @@ const Card = ({ title, img, url, backgroundColor }) => {
                 className="flex justify-between items-center p-2 grow sm:flex-col sm:justify-center sm:gap-4"
             >
                 <h4 className="font-bold text-black italic sm:text-2xl">{title}</h4>
-                <a className="flex items-center justify-center hover:underline hover:text-white text-black hover:cursor-pointer sm:flex-col sm:gap-10">
+                <a
+                    href={url}
+                    target="_blank"
+                    className="flex items-center justify-center hover:underline hover:text-white text-black hover:cursor-pointer sm:flex-col sm:gap-10"
+                >
                     <i class="fa-solid fa-up-right-from-square"></i>
                     <CTAButton color="#000" className={"w-20 -rotate-[145deg]"} size={12} />
                 </a>

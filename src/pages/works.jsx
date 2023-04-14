@@ -2,8 +2,8 @@ import React from "react"
 import Layout from "@/components/Layout"
 import H2 from "@/components/StyledComponents/H2"
 import Star from "@/components/icons/Star"
-import img3 from "../../public/img/works/img-3.png"
-import img2 from "../../public/img/works/img-2.png"
+import resto from "../../public/img/works/resto.png"
+import foodee from "../../public/img/works/foodee.jpg"
 import Card from "@/components/pages/Works/Card"
 
 const Works = ({ data }) => {
@@ -39,15 +39,15 @@ export const getStaticProps = async () => {
         props: {
             data: [
                 {
-                    img: img3,
-                    title: "Tasty",
-                    url: "URM PAPA",
+                    img: resto,
+                    title: "Resto",
+                    url: "https://resto-green.vercel.app/",
                     backgroundColor: "#fea",
                 },
                 {
-                    img: img2,
+                    img: foodee,
                     title: "Foodee",
-                    url: "URM PAPA",
+                    url: "https://foodee-six.vercel.app/",
                     backgroundColor: "#EDC6B1",
                 },
                 // {
