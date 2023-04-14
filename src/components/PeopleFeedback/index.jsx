@@ -65,7 +65,7 @@ const Index = () => {
     }
 
     return (
-        <div className="text-white px-6 pb-20 mx-auto container">
+        <div id="feedback" className="text-white px-6 pb-20 mx-auto container">
             <div className="flex justify-between items-end pt-20 pb-12 sm:justify-start sm:items-center sm:gap-6">
                 <H2 className={"w-3/4 sm:text-5xl sm:w-auto"}>Lo que nuestros clientes piensan de nosotros</H2>
                 <div className="w-16 sm:w-20">

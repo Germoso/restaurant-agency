@@ -3,9 +3,9 @@ import DownArrow from "@/components/icons/DownArrow"
 import WordCircle from "@/components/icons/WordCircle"
 import React from "react"
 
-const CTAButton = ({ color = "#FFFFFC", arrowRotation = 0, className }) => {
+const CTAButton = ({ color = "#FFFFFC", arrowRotation = 0, className, size = 32 }) => {
     return (
-        <div className={`${className} relative w-32 flex justify-center items-center`}>
+        <div className={`${className} relative w-${size} flex justify-center items-center`}>
             <motion.div
                 transition={{ repeat: Infinity, duration: 15, ease: "linear" }}
                 animate={{ rotate: 360 }}
@@ -13,7 +13,7 @@ const CTAButton = ({ color = "#FFFFFC", arrowRotation = 0, className }) => {
             >
                 <WordCircle color={color} />
             </motion.div>
-            <div className={`w-10`} style={{ rotate: `${arrowRotation}deg` }}>
+            <div style={{ rotate: `${arrowRotation}deg`, width: size + 10 }}>
                 <DownArrow color={color} />
             </div>
         </div>

@@ -9,10 +9,10 @@ import img3 from "../../../public/img-3.png"
 
 const Index = () => {
     return (
-        <div className="bg-cream w-full px-6 py-20">
+        <div id="work" className="bg-cream w-full px-6 py-20">
             <div className="mx-auto container">
                 <H2 className={"flex items-center sm:text-5xl"}>
-                    Our Works
+                    Nuestro Trabajo
                     <div className="w-20">
                         <Star />
                     </div>
@@ -31,7 +31,13 @@ const Index = () => {
                         <Image src={img2} alt="Resto" className="" />
                     </div>
                 </div>
-                <CTAButton color="#000" className={"mx-auto mt-16 sm:mx-0 sm:ml-auto sm:-rotate-90 "} />
+                <a
+                    href=""
+                    className="flex items-center justify-center mx-auto mt-16 hover:text-white hover:underline sm:justify-end gap-2"
+                >
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                    <CTAButton color="#000" className={" -rotate-[145deg] "} />
+                </a>
             </div>
         </div>
     )

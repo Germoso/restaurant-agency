@@ -3,6 +3,7 @@ import H2 from "../StyledComponents/H2"
 import TextInput from "../StyledComponents/TextInput"
 import TextArea from "../StyledComponents/TextArea"
 import CTAButton from "../CTAButton"
+import Button from "../StyledComponents/Button"
 
 const Index = () => {
     const [name, setName] = useState("")
@@ -10,7 +11,7 @@ const Index = () => {
     const [message, setMessage] = useState("")
 
     return (
-        <div className="bg-cream">
+        <div id="contact" className="bg-cream">
             <div className="mx-auto container py-10 px-6 ">
                 <H2 className={"pt-6 sm:text-5xl"}>Trabajemos juntos</H2>
                 <div className="relative w-full pt-10 flex flex-col items-center justify-start lg:flex-row lg:gap-2 h-fit">
@@ -45,12 +46,9 @@ const Index = () => {
                             name={"message"}
                             placeholder="Como te podemos ayudar?"
                         />
-                        <button
-                            className="bg-secondary w-fit px-4 py-2 rounded hover:shadow mx-auto text-white mt-4"
-                            type="submit"
-                        >
-                            Submit
-                        </button>
+                        <Button type="submit" className={"mx-auto"}>
+                            Enviar
+                        </Button>
                     </form>
                     <CTAButton className={"mx-auto lg:rotate-90 w-40 my-20 lg:mt-0 rotate-180"} color="#000" />
                 </div>

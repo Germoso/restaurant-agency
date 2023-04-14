@@ -7,7 +7,7 @@ const Index = ({ children }) => {
     return (
         <MotionConfig transition={{ duration: 0.4, ease: "circOut" }}>
             <Navbar />
-            <div className="bg-primary w-full">{children}</div>
+            <div className="bg-primary w-full pt-24">{children}</div>
             <Footer />
         </MotionConfig>
     )

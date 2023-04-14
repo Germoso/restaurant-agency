@@ -43,23 +43,38 @@ const Navbar = () => {
                             <ul className="h-full w-full flex flex-col  items-center justify-center  text-base gap-8 text-white">
                                 <Li className="!opacity-100">Home</Li>
                                 <hr className="w-full" />
-                                <Li>Service</Li>
-                                <Li>Work</Li>
-                                <Li>Blog</Li>
-                                <Li>Contact</Li>
+                                <Li className="!opacity-100">
+                                    <a href="/"> Home</a>
+                                </Li>
+                                <Li>
+                                    <a href="#service">Service</a>
+                                </Li>
+                                <Li>
+                                    <a href="/works">Work</a>
+                                </Li>
+                                <Li>
+                                    <a href="#contact">Contact</a>
+                                </Li>
                             </ul>
                         </motion.div>
                     )}
                 </AnimatePresence>
                 {/* DESKTOP MENU */}
                 <ul className="sm:flex items-center justify-center  text-base gap-6 text-white hidden">
-                    <Li className="!opacity-100">Home</Li>
-                    <Li>Service</Li>
-                    <Li>Work</Li>
-                    <Li>Blog</Li>
-                    <Li>Contact</Li>
+                    <Li className="!opacity-100">
+                        <a href="/"> Home</a>
+                    </Li>
+                    <Li>
+                        <a href="#service">Service</a>
+                    </Li>
+                    <Li>
+                        <a href="/works">Work</a>
+                    </Li>
+                    <Li>
+                        <a href="#contact">Contact</a>
+                    </Li>
                 </ul>
-                <button className="sm:hidden" onClick={openMenu}>
+                <button className="sm:hidden fixed right-4 z-index-[999]" onClick={openMenu}>
                     <Hamburger size="60px" />
                 </button>
             </div>
