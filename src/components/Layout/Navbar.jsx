@@ -3,6 +3,9 @@ import Hamburger from "@/components/icons/Hamburger"
 import Logo from "@/components/icons/Logo"
 import { AnimatePresence, motion } from "framer-motion"
 import RightArrow from "@/components/icons/RightArrow"
+import NavLinks from "./NavLinks"
+import Li from "../StyledComponents/Li"
+import Link from "next/link"
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -40,39 +43,24 @@ const Navbar = () => {
                             >
                                 <RightArrow />
                             </motion.button>
-                            <ul className="h-full w-full flex flex-col  items-center justify-center  text-base gap-8 text-white">
-                                <Li className="!opacity-100">Home</Li>
-                                <hr className="w-full" />
+                            <ul
+                                onClick={() => {
+                                    setIsOpen(false)
+                                }}
+                                className="h-full w-full flex flex-col  items-center justify-center  text-base gap-8 text-white"
+                            >
                                 <Li className="!opacity-100">
-                                    <a href="/"> Home</a>
+                                    <Link href="/"> Home</Link>
                                 </Li>
-                                <Li>
-                                    <a href="#service">Service</a>
-                                </Li>
-                                <Li>
-                                    <a href="/works">Work</a>
-                                </Li>
-                                <Li>
-                                    <a href="#contact">Contact</a>
-                                </Li>
+                                <hr className="w-full" />
+                                <NavLinks noHome />
                             </ul>
                         </motion.div>
                     )}
                 </AnimatePresence>
                 {/* DESKTOP MENU */}
                 <ul className="sm:flex items-center justify-center  text-base gap-6 text-white hidden">
-                    <Li className="!opacity-100">
-                        <a href="/"> Home</a>
-                    </Li>
-                    <Li>
-                        <a href="#service">Service</a>
-                    </Li>
-                    <Li>
-                        <a href="/works">Work</a>
-                    </Li>
-                    <Li>
-                        <a href="#contact">Contact</a>
-                    </Li>
+                    <NavLinks />
                 </ul>
                 <button className="sm:hidden fixed right-4 z-index-[999]" onClick={openMenu}>
                     <Hamburger size="60px" />
@@ -80,10 +68,6 @@ const Navbar = () => {
             </div>
         </nav>
     )
-}
-
-const Li = ({ children, className = "" }) => {
-    return <li className={`opacity-50 hover:cursor-pointer ${className}`}>{children}</li>
 }
 
 export default Navbar

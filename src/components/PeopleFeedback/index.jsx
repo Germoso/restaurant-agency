@@ -12,10 +12,18 @@ const Index = () => {
     const [currentCard, setCurrentCard] = useState(0)
     const [data, setData] = useState([
         {
+            active: false,
+            title: "Isabel Ramos",
+            description:
+                "Estamos encantados con el nuevo sitio web que nos han diseñado. Han hecho un trabajo increíble al capturar la esencia de nuestro restaurante y destacar nuestros platos de manera visual. ¡Altamente recomendados!",
+            subtitle: "",
+            photo: profile1,
+        },
+        {
             active: true,
             title: "Ana García",
             description:
-                "Desde la primera consulta hasta el lanzamiento del sitio web, el equipo ha sido profesional, amable y muy eficiente. ¡El resultado final ha sido espectacular!",
+                "Desde el primer acercamiento hasta el lanzamiento del sitio web, el equipo ha sido profesional, amable y muy eficiente. ¡El resultado final ha sido espectacular!",
             subtitle: "",
             photo: profile3,
         },
@@ -23,17 +31,9 @@ const Index = () => {
             active: false,
             title: "Carlos Hernández",
             description:
-                "La agencia de diseño web para restaurantes no solo nos proporcionó un sitio web impresionante, sino que también nos ayudó a mejorar nuestra estrategia de marketing digital. ¡Gracias por todo el apoyo y la orientación!",
+                "No solo nos proporcionó un sitio web impresionante, sino que también nos ayudó a mejorar nuestra estrategia de marketing digital. ¡Gracias por todo el apoyo y la orientación!",
             subtitle: "",
             photo: profile2,
-        },
-        {
-            active: false,
-            title: "Isabel Ramos",
-            description:
-                "Estamos encantados con el nuevo sitio web que nos ha diseñado la agencia. Han hecho un trabajo increíble al capturar la esencia de nuestro restaurante y destacar nuestros platos de manera visual. ¡Altamente recomendados!",
-            subtitle: "",
-            photo: profile1,
         },
     ])
 

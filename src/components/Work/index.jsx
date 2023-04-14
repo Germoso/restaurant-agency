@@ -36,7 +36,7 @@ const Index = () => {
                     className="flex items-center justify-center mx-auto mt-16 hover:text-white hover:underline sm:justify-end gap-2"
                 >
                     <i class="fa-solid fa-up-right-from-square"></i>
-                    <CTAButton color="#000" className={" -rotate-[145deg] "} />
+                    <CTAButton color="#000" className={" -rotate-[145deg] "} size={40} />
                 </a>
             </div>
         </div>

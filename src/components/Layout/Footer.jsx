@@ -1,6 +1,7 @@
 import React from "react"
 import Logo from "@/components/icons/Logo"
 import Instagram from "@/components/icons/Instagram"
+import NavLinks from "./NavLinks"
 
 const Index = () => {
     return (
@@ -17,22 +18,18 @@ const Index = () => {
                 <hr className="mt-10" />
                 <div className=" sm:flex  sm:gap-36 items-start ">
                     <div className="mt-16 sm:mt-0">
-                        <h5 className="text-lg text-center">Company</h5>
+                        <h5 className="text-lg text-center">Sabores Web</h5>
                         <ul className="flex flex-col items-center justify-center mt-6  text-sm gap-3 text-white">
-                            <Li className="!opacity-100">Home</Li>
-                            <Li>Service</Li>
-                            <Li>Work</Li>
-                            <Li>Blog</Li>
-                            <Li>Contact</Li>
+                            <NavLinks />
                         </ul>
                     </div>
-                    <div className="mt-10 sm:mt-0">
+                    {/* <div className="mt-10 sm:mt-0">
                         <h5 className="text-lg text-center">Soporte</h5>
                         <ul className="flex flex-col items-center justify-center mt-6  text-sm gap-3 text-white">
                             <Li>Terminos de Servicio</Li>
                             <Li>Terminos de Privacidad</Li>
                         </ul>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </footer>

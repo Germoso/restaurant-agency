@@ -22,7 +22,7 @@ const Card = ({ active, data }) => {
                         <span className="text-xs opacity-60 uppercase">{data.subtitle}</span>
                     </div>
                 </div>
-                <p className="mt-6">{data.description}</p>
+                <p className="mt-2">{data.description}</p>
             </motion.div>
             {/* DESKTOP */}
             <motion.div
@@ -43,7 +43,7 @@ const Card = ({ active, data }) => {
                         <span className="text-xs opacity-60 uppercase">{data.subtitle}</span>
                     </div>
                 </div>
-                <p className="mt-6">{data.description}</p>
+                <p className="mt-2">{data.description}</p>
             </motion.div>
         </>
     )
