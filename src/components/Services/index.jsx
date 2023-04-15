@@ -30,7 +30,7 @@ const Index = () => {
         <div id="service" className="bg-cream text-black px-5 py-20">
             <div className="relative container mx-auto flex flex-col sm:flex-row sm:items-center">
                 <div className="sm:w-1/2">
-                    <H2 className={"text-5xl"}>Lleve su negocio al siguiente nivel con nuestra experiencia.</H2>
+                    <H2 className={"text-5xl"}>Lleve su negocio al siguiente nivel con nuestros servicios.</H2>
                     <p className="opacity-75 pt-4 text-lg">
                         Ofrecemos servicios integrales para el crecimiento de su negocio. Nos apasiona ayudarlo a
                         alcanzar sus objetivos y estamos comprometidos con su satisfacción.

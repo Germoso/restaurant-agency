@@ -12,7 +12,7 @@ const Works = ({ data }) => {
             <div className="bg-cream">
                 <div className="mx-auto container px-4 py-16">
                     <H2 className={"flex items-center sm:text-5xl"}>
-                        Nuestro Trabajo
+                        Portafolio de Diseños
                         <div className="w-20">
                             <Star />
                         </div>
