@@ -1,5 +1,5 @@
 import React from "react"
-import H3 from "../StyledComponents/H3"
+import H3 from "../../../StyledComponents/H3"
 
 const Card = ({ data, number }) => {
     return (

@@ -1,7 +1,7 @@
 import React from "react"
 import H2 from "@/components/StyledComponents/H2"
-import Card from "@/components/Services/Card"
-import CTAButton from "../CTAButton"
+import Card from "@/components/pages/Index/Services/Card"
+import CTAButton from "../../../CTAButton"
 
 const services = [
     {
@@ -27,7 +27,7 @@ const services = [
 
 const Index = () => {
     return (
-        <div id="service" className="bg-cream text-black px-5 py-20">
+        <div id="service" className="bg-cream text-black px-5 py-20 pt-80 lg:pt-0">
             <div className="relative container mx-auto flex flex-col sm:flex-row sm:items-center">
                 <div className="sm:w-1/2">
                     <H2 className={"text-5xl"}>Lleve su negocio al siguiente nivel con nuestros servicios.</H2>
@@ -42,7 +42,7 @@ const Index = () => {
                         <Card key={index} data={el} number={index + 1} />
                     ))}
                 </div>
-                <CTAButton color="#101828" arrowRotation={180} className="mx-auto pt-16 sm:hidden " />
+                {/* <CTAButton color="#101828" arrowRotation={180} className="mx-auto pt-16 sm:hidden " /> */}
             </div>
         </div>
     )

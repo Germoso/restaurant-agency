@@ -12,11 +12,11 @@ const data = [
         value: 25,
         plus: true,
     },
-    {
-        title: "Tiempo Promedio de Entrega (Dias)",
-        value: 12,
-        plus: false,
-    },
+    // {
+    //     title: "Tiempo Promedio de Entrega (Dias)",
+    //     value: 12,
+    //     plus: false,
+    // },
     {
         title: "Proyectos Terminados",
         value: 28,
