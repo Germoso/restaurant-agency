@@ -13,7 +13,7 @@ const BenefitsCard = ({ title, icon, description, className }) => {
                 <div className="w-10 h-10 flex justify-center items-center bg-yellow  rounded-lg  opacity-50">
                     {icon}
                 </div>
-                <H3>{title}</H3>
+                <H3 className={"font-semibold"}>{title}</H3>
             </div>
             <p className="text-sm opacity-70">{description}</p>
         </motion.div>
