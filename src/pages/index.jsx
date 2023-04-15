@@ -6,10 +6,12 @@ import Services from "@/components/pages/Index/Services"
 import Contact from "@/components/Contact"
 import Work from "@/components/Work"
 import PeopleFeedback from "@/components/PeopleFeedback"
-import Pricing from "@/components/pages/Index/Pricing"
+import Star from "@/components/icons/Star"
 import H2 from "@/components/StyledComponents/H2"
 import Button from "@/components/StyledComponents/Button"
 import CTAButton from "@/components/CTAButton"
+import BenefitsCard from "@/components/pages/Index/BenefitsCard"
+import { motion } from "framer-motion"
 
 const Index = () => {
     return (
@@ -45,7 +47,57 @@ const Index = () => {
             <Stats />
             <Work />
             <PeopleFeedback />
-            <Pricing />
+            {/* <Pricing /> */}
+            <div className="bg-cream  text-black ">
+                <div className="container mx-auto py-20 px-5 relative w-full ">
+                    <H2 className={"text-5xl flex items-center"}>
+                        Nos encargamos de todo{" "}
+                        <div className="w-20">
+                            <Star />
+                        </div>
+                    </H2>
+                    <div className="grid-cols-1 grid mt-10">
+                        <BenefitsCard
+                            title={"Deja los detalles técnicos en nuestras manos"}
+                            description={
+                                "Con nuestro servicio, no tendrás que preocuparte por configuraciones técnicas, hosting, dominio o administración de tu sitio web. Nos encargamos de todo para que tú puedas enfocarte en tu negocio de comida."
+                            }
+                            icon={<i class="fa-regular fa-face-smile"></i>}
+                        />
+                        <BenefitsCard
+                            title={"Página web profesional y atractiva"}
+                            description={
+                                "Mostramos la identidad unica y caracteristica de tu negocio y lo hacemos destacar entre la competencia."
+                            }
+                            icon={<i class="fas fa-desktop"></i>}
+                            // className={"lg:row-start-3 lg:row-end-4"}
+                        />
+                        <BenefitsCard
+                            title={"Actualizaciones regulares y soporte técnico"}
+                            description={
+                                "Realizamos los cambios que solicites y mantenemos tu sitio web actualizado en óptimas condiciones para que no tengas que preocuparte por nada."
+                            }
+                            icon={<i class="fas fa-wrench"></i>}
+                            // className={"lg:row-start-2 lg:row-end-3 lg:col-start-2 lg:col-end-3"}
+                        />
+                        <BenefitsCard
+                            title={"Presencia en línea sólida"}
+                            description={
+                                "Creamos un sitio web que les permitirá interactuar con sus clientes en línea, mantener su presencia en línea en constante crecimiento y reafirmar su marca."
+                            }
+                            icon={<i class="fas fa-globe"></i>}
+                            // className={"lg:row-start-4 lg:row-end-5 lg:col-start-2 lg:col-end-3"}
+                        />
+                    </div>
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        className="absolute bottom-5 lg:bottom-0 right-10 w-10"
+                    >
+                        <Star />
+                    </motion.div>
+                </div>
+            </div>
             <Contact />
         </Layout>
     )

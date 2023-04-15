@@ -46,7 +46,7 @@ const Index = () => {
                             name={"message"}
                             placeholder="Como te podemos ayudar?"
                         />
-                        <Button type="submit" className={"mx-auto"}>
+                        <Button type="submit" className={"mx-auto bg-secondary text-white"}>
                             Enviar
                         </Button>
                     </form>
