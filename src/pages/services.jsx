@@ -7,6 +7,7 @@ import StarShooting from "@/components/icons/StarShooting"
 import Head from "next/head"
 
 const basico = [
+    "Sitio Web Personalizado (Gratis)",
     "Hosting Incluido",
     "Dominio personalizado incluido",
     "Mantenimiento incluido",
@@ -18,6 +19,7 @@ const basico = [
 ]
 
 const planPersonalizado = [
+    "Sitio Web Personalizado",
     "Sitio Web Personalizado y profesional", // Diseño web
     "Adaptado a todos los dispositivos", // Adaptabilidad
     "Seguridad y privacidad avanzada", // Seguridad
