@@ -13,10 +13,14 @@ import Button from "@/components/StyledComponents/Button"
 import CTAButton from "@/components/CTAButton"
 import BenefitsCard from "@/components/pages/Index/BenefitsCard"
 import { motion } from "framer-motion"
+import Head from "next/head"
 
 const Index = () => {
     return (
         <Layout logoColor={"#fff"} className={"bg-primary"} navBarClassName={"text-white"}>
+            <Head>
+                <title>Sirviendo Soluciones | Sabores Web</title>
+            </Head>
             <Hero />
             <div id="service" className="bg-cream text-black px-5 py-20 h-screen ">
                 <div className="container mx-auto flex flex-col lg:flex-row lg:gap-5 items-center w-full h-fit ">
