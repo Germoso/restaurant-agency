@@ -39,10 +39,7 @@ const Index = () => {
                     <CTAButton color="#101828" arrowRotation={180} className="pt-16 hidden sm:flex w-40 mt-10" />
                 </motion.div>
 
-                <motion.div
-                    transition={{ staggerChildren: 0.5 }}
-                    className="gap-7 flex flex-col mt-16 sm:flex-row sm:flex-wrap sm:justify-center sm:items-start sm:gap-0 sm:w-1/2"
-                >
+                <motion.div className="gap-7 flex flex-col mt-16 sm:flex-row sm:flex-wrap sm:justify-center sm:items-start sm:gap-0 sm:w-1/2">
                     {services.map((el, index) => (
                         <Card key={index} data={el} number={index + 1} />
                     ))}
