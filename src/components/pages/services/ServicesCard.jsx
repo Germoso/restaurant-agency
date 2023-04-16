@@ -26,7 +26,14 @@ const PricingCard = ({ name, price, features, mostPopular = false, montly = fals
                     </li>
                 ))}
             </ul>
-            <Button className={"bg-yellow text-black"}>{price ? "Comprar" : "Cotizar"}</Button>
+            <Button
+                onClick={() => {
+                    location.assign("/#contact")
+                }}
+                className={"bg-yellow text-black"}
+            >
+                {price ? "Comprar" : "Cotizar"}
+            </Button>
         </div>
     )
 }

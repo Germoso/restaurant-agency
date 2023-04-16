@@ -5,15 +5,33 @@ import H2 from "@/components/StyledComponents/H2"
 import ServicesCard from "@/components/pages/services/ServicesCard"
 import StarShooting from "@/components/icons/StarShooting"
 
+const basico = [
+    "Hosting Gratis",
+    "Dominio personalizado Gratis",
+    "Mantenimiento Gratis",
+    "Sitio web personalizado a medida",
+    "Adaptado a todos los dispositivos",
+    "Seguro",
+    "Modificaciones Gratis",
+]
+
+const planPersonalizado = [
+    "Sitio Web Personalizado y profesional", // Diseño web
+    "Adaptado a todos los dispositivos", // Adaptabilidad
+    "Seguridad y privacidad avanzada", // Seguridad
+    "Asesoría técnica y soporte para la gestión del sitio web",
+    "Panel administrativo (opcional)",
+]
+
 const Services = () => {
     return (
         <Layout className={"bg-cream"} navBarClassName={"text-black"} logoColor={"#000"}>
             <div className="container mx-auto text-black px-6 ">
                 <header className="h-screen flex flex-col justify-center items-center">
-                    <h1 className="text-3xl sm:text-7xl sm:w-2/3 relative mx-auto text-center">
+                    <h1 className="text-5xl sm:text-7xl sm:w-2/3 relative mx-auto text-center">
                         Nos adaptamos a tus necesidades
                     </h1>
-                    <p>Obten el sitio web perfecto para tu negocio solo por $25USD</p>
+                    <p className="text-sm">Obten el sitio web perfecto para tu negocio solo por $25USD</p>
 
                     <CTAButton color="#000" className={"mx-auto mt-20"} />
                 </header>
@@ -25,8 +43,8 @@ const Services = () => {
                         </div>
                     </H2>
                     <section className="flex flex-col gap-4 w-full mt-10 sm:flex-row">
-                        <ServicesCard features={["1", "2", "3"]} mostPopular name={"Basico"} price={"25"} montly />
-                        <ServicesCard features={["1", "2", "3"]} name={"Personalizado"} price={""} />
+                        <ServicesCard features={basico} mostPopular name={"Basico"} price={"25"} montly />
+                        <ServicesCard features={planPersonalizado} name={"Personalizado"} price={""} />
                     </section>
                 </main>
             </div>
