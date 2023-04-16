@@ -12,7 +12,7 @@ const NavLinks = ({ noHome }) => {
                 <a href="/services">Services</a>
             </Li>
             <Li>
-                <Link href="/works">Work</Link>
+                <Link href="/works">Works</Link>
             </Li>
             <Li>
                 <a href="/#contact">Contact</a>

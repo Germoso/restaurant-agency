@@ -5,6 +5,7 @@ import React from "react"
 const BenefitsCard = ({ title, icon, description, className }) => {
     return (
         <motion.div
+            viewport={{ once: true }}
             initial={{ opacity: 0, y: -100 }}
             whileInView={{ opacity: 1, y: 0 }}
             className={`border-b border-primary py-4 px-4  ${className}`}

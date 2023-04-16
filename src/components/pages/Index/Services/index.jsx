@@ -30,7 +30,12 @@ const Index = () => {
     return (
         <div id="service" className="bg-cream text-black px-5 py-20 pt-96 lg:pt-0">
             <div className="relative container mx-auto flex flex-col sm:flex-row sm:items-center">
-                <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} className="sm:w-1/2">
+                <motion.div
+                    viewport={{ once: true }}
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    className="sm:w-1/2"
+                >
                     <H2 className={"text-5xl"}>Lleve su negocio al siguiente nivel con nuestros servicios.</H2>
                     <p className="opacity-75 pt-4 text-lg">
                         Ofrecemos servicios integrales para el crecimiento de su negocio. Nos apasiona ayudarlo a

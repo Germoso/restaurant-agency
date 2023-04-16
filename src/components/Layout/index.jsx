@@ -2,6 +2,7 @@ import React from "react"
 import Navbar from "./Navbar"
 import Footer from "./Footer"
 import { MotionConfig } from "framer-motion"
+import WhatsappButton from "./WhatsappButton"
 
 const Index = ({ children, className, navBarClassName, logoColor }) => {
     return (
@@ -9,6 +10,7 @@ const Index = ({ children, className, navBarClassName, logoColor }) => {
             <Navbar logoColor={logoColor} className={navBarClassName} />
             <div className={`w-full ${className}`}>{children}</div>
             <Footer />
+            {/* <WhatsappButton /> */}
         </MotionConfig>
     )
 }

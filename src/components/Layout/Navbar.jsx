@@ -21,9 +21,9 @@ const Navbar = ({ className, logoColor }) => {
     return (
         <nav className={`absolute top-0 left-0 w-full h-24 ${className}`}>
             <div className="mx-auto h-full container flex  justify-between items-center px-4 sm:px-6">
-                <div className="w-80">
+                <button onClick={() => location.assign("/")} className="w-32">
                     <Logo color={logoColor} />
-                </div>
+                </button>
                 {/* MOBILE MENU */}
                 <AnimatePresence>
                     {isOpen && (

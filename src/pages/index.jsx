@@ -7,19 +7,21 @@ import Contact from "@/components/Contact"
 import Work from "@/components/Work"
 import PeopleFeedback from "@/components/PeopleFeedback"
 import Star from "@/components/icons/Star"
+import Logo from "@/components/icons/Logo"
 import H2 from "@/components/StyledComponents/H2"
 import Button from "@/components/StyledComponents/Button"
 import CTAButton from "@/components/CTAButton"
 import BenefitsCard from "@/components/pages/Index/BenefitsCard"
-import { MotionConfig, motion } from "framer-motion"
+import { motion } from "framer-motion"
 
 const Index = () => {
     return (
-        <Layout className={"bg-primary"} navBarClassName={"text-white"}>
+        <Layout logoColor={"#fff"} className={"bg-primary"} navBarClassName={"text-white"}>
             <Hero />
             <div id="service" className="bg-cream text-black px-5 py-20 h-screen ">
                 <div className="container mx-auto flex flex-col lg:flex-row lg:gap-5 items-center w-full h-fit ">
                     <motion.div
+                        viewport={{ once: true }}
                         initial={{ y: -100, opacity: 0 }}
                         whileInView={{ y: 0, opacity: 1 }}
                         className="w-full lg:w-3/5"
@@ -32,7 +34,7 @@ const Index = () => {
                         </p>
                     </motion.div>
                     <motion.div
-                        viewport={{ once: false }}
+                        viewport={{ once: true }}
                         initial={{ y: 100, opacity: 0 }}
                         whileInView={{ y: 0, opacity: 1 }}
                         className="grow shadow-2xl rounded-xl py-10 px-5 bg-secondary text-white mt-10 flex flex-col"
@@ -40,10 +42,10 @@ const Index = () => {
                         <H2 className={"auto text-center text-4xl"}>Beneficios</H2>
                         <ul className="ml-5 pt-5 flex flex-col gap-2">
                             <Li>Ahorra tiempo y recursos</Li>
-                            <Li>Servicio economico y de calidad</Li>
+                            <Li>Servicio accesible y de calidad</Li>
                             <Li>Página web a medida, profesional y atractiva</Li>
                             <Li>Mayor visibilidad en línea</Li>
-                            <Li>Actualizaciones regulares y soporte técnico totalmente gratuito</Li>
+                            <Li>Actualizaciones regulares y soporte técnico 24/7 totalmente gratuito</Li>
                         </ul>
                         <Button
                             onClick={() => location.assign("/services")}
@@ -54,7 +56,7 @@ const Index = () => {
                     </motion.div>
                     <CTAButton color="#000" className={"mr-5 mt-16 ml-auto lg:hidden"} arrowRotation={135} />
                 </div>
-                <CTAButton color="#000" className={"ml-auto hidden lg:flex"} arrowRotation={135} />
+                <CTAButton color="#000" className={"ml-auto hidden mt-16 lg:flex"} arrowRotation={135} />
             </div>
 
             <Services />
@@ -62,8 +64,13 @@ const Index = () => {
             <Work />
             <PeopleFeedback />
             {/* <Pricing /> */}
+            {/* <div className="bg-cream">
+                <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} className="w-60 mx-auto">
+                    <Logo />
+                </motion.div>
+            </div> */}
             <div className="bg-cream  text-black ">
-                <div className="container mx-auto py-20 px-5 relative w-full ">
+                <div className="container mx-auto pb-20 px-5 relative w-full ">
                     <H2 className={"text-5xl flex items-center"}>
                         Nos encargamos de todo{" "}
                         <div className="w-20">
@@ -81,7 +88,7 @@ const Index = () => {
                         <BenefitsCard
                             title={"Página web profesional y atractiva"}
                             description={
-                                "Mostramos la identidad unica y caracteristica de tu negocio y lo hacemos destacar entre la competencia."
+                                "Mostramos la identidad unica de tu negocio y lo hacemos destacar entre la competencia."
                             }
                             icon={<i class="fas fa-desktop"></i>}
                             // className={"lg:row-start-3 lg:row-end-4"}

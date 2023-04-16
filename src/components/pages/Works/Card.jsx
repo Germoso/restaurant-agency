@@ -1,10 +1,13 @@
 import React from "react"
 import Image from "next/image"
-import Button from "@/components/StyledComponents/Button"
-import CTAButton from "@/components/CTAButton"
+import { motion } from "framer-motion"
+
 const Card = ({ title, img, url, backgroundColor }) => {
     return (
-        <div
+        <motion.div
+            initial={{ x: "-50%", opacity: 0 }}
+            whileInView={{ x: "0", opacity: 1 }}
+            viewport={{ once: true }}
             style={{ backgroundColor }}
             className="text-white w-full rounded-xl flex flex-col overflow-hidden shadow-xl sm:flex-row border-2 border-solid border-black"
         >
@@ -22,10 +25,10 @@ const Card = ({ title, img, url, backgroundColor }) => {
                     className="flex items-center justify-center hover:underline hover:text-white text-black hover:cursor-pointer sm:flex-col sm:gap-10"
                 >
                     <i class="fa-solid fa-up-right-from-square"></i>
-                    <CTAButton color="#000" className={"w-20 -rotate-[145deg]"} size={12} />
+                    {/* <CTAButton color="#000" className={"w-20 -rotate-[145deg]"} size={12} /> */}
                 </a>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

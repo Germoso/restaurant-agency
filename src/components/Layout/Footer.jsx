@@ -5,21 +5,24 @@ import NavLinks from "./NavLinks"
 
 const Index = () => {
     return (
-        <footer className="bg-secondary text-white text-xs px-6 sm:flex sm:justify-between sm:px-20 sm:items-center sm:py-10">
-            <div className="sm:flex sm:items-start sm:justify-between container mx-auto w-full py-14 ">
-                <div className="flex flex-col">
-                    <Logo />
-                    <span className="mt-2">Copyright© 2023, SaboresWeb</span>
-                    <span>All rights reserved</span>
-                    <div className="mt-4">
-                        <Instagram />
+        <footer className="bg-secondary text-white text-xs px-6 sm:flex sm:justify-between sm:px-20 sm:items-center sm:py-2">
+            <div className="sm:flex sm:items-center sm:justify-between container mx-auto w-full py-4 ">
+                <div className="flex justify-center items-center gap-2">
+                    <div className="w-40">
+                        <Logo color="#EBE2D9" />
+                    </div>
+                    <div className="mt-6">
+                        <span className="mt-2">Copyright© 2023, SaboresWeb. </span>
+                        <span>All rights reserved</span>
+                        <div>
+                            <Instagram />
+                        </div>
                     </div>
                 </div>
-                <hr className="mt-10" />
+                <hr className="mt-4" />
                 <div className=" sm:flex  sm:gap-36 items-start ">
-                    <div className="mt-16 sm:mt-0">
-                        <h5 className="text-lg text-center">Sabores Web</h5>
-                        <ul className="flex flex-col items-center justify-center mt-6  text-sm gap-3 text-white">
+                    <div className="mt-4 sm:mt-0">
+                        <ul className="flex flex-col items-center justify-center mt-6  text-sm gap-3 text-white sm:flex-row">
                             <NavLinks />
                         </ul>
                     </div>

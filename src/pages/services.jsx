@@ -6,13 +6,14 @@ import ServicesCard from "@/components/pages/services/ServicesCard"
 import StarShooting from "@/components/icons/StarShooting"
 
 const basico = [
-    "Hosting Gratis",
-    "Dominio personalizado Gratis",
-    "Mantenimiento Gratis",
+    "Hosting Incluido",
+    "Dominio personalizado incluido",
+    "Mantenimiento incluido",
+    "Soporte 24/7",
     "Sitio web personalizado a medida",
     "Adaptado a todos los dispositivos",
     "Seguro",
-    "Modificaciones Gratis",
+    "Modificaciones en cualquier momento",
 ]
 
 const planPersonalizado = [
@@ -42,7 +43,7 @@ const Services = () => {
                             <StarShooting />
                         </div>
                     </H2>
-                    <section className="flex flex-col gap-4 w-full mt-10 sm:flex-row">
+                    <section className="flex flex-col gap-4 w-full justify-center mt-16 sm:flex-row">
                         <ServicesCard features={basico} mostPopular name={"Basico"} price={"25"} montly />
                         <ServicesCard features={planPersonalizado} name={"Personalizado"} price={""} />
                     </section>
