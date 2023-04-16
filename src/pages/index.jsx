@@ -15,7 +15,7 @@ import { motion } from "framer-motion"
 
 const Index = () => {
     return (
-        <Layout className={"bg-primary"}>
+        <Layout className={"bg-primary"} navBarClassName={"text-white"}>
             <Hero />
             <div id="service" className="bg-cream text-black px-5 py-20 h-screen ">
                 <div className="container mx-auto flex flex-col lg:flex-row lg:gap-5 items-center h-full">

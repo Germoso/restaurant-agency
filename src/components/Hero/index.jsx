@@ -19,9 +19,6 @@ const Index = () => {
                     </div>
                 </span>
                 sus Clientes
-                <div className="w-12 inline-block ml-2 sm:w-20">
-                    <HeroIcon />
-                </div>
             </h1>
             <p className="opacity-75 text-base">
                 Diseñamos su sitio web para mejorar la experiencia del usuario y reflejar la personalidad de su
