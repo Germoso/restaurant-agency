@@ -1,16 +1,24 @@
 import React from "react"
 import WordOutline from "@/components/icons/WordOutline"
-import HeroIcon from "@/components/icons/HeroIcon"
 import Spiral from "@/components/icons/Spiral"
 import CTAButton from "@/components/CTAButton"
+import { motion } from "framer-motion"
 
 const Index = () => {
     return (
-        <div
+        <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1 }}
             id="hero"
             className="text-white text-center flex flex-col items-center gap-10 h-screen justify-center pt-16 px-2"
         >
-            <h1 className="text-3xl sm:text-6xl sm:w-2/3 relative">
+            <h1
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1 }}
+                className="text-3xl sm:text-6xl sm:w-2/3 relative"
+            >
                 Una Agencia que
                 <span className="relative p-2">
                     Deleita
@@ -28,7 +36,7 @@ const Index = () => {
                 <Spiral />
             </div>
             <CTAButton className={"sm:w-40"} />
-        </div>
+        </motion.div>
     )
 }
 

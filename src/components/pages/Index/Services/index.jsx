@@ -2,6 +2,7 @@ import React from "react"
 import H2 from "@/components/StyledComponents/H2"
 import Card from "@/components/pages/Index/Services/Card"
 import CTAButton from "../../../CTAButton"
+import { motion } from "framer-motion"
 
 const services = [
     {
@@ -29,19 +30,23 @@ const Index = () => {
     return (
         <div id="service" className="bg-cream text-black px-5 py-20 pt-80 lg:pt-0">
             <div className="relative container mx-auto flex flex-col sm:flex-row sm:items-center">
-                <div className="sm:w-1/2">
+                <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} className="sm:w-1/2">
                     <H2 className={"text-5xl"}>Lleve su negocio al siguiente nivel con nuestros servicios.</H2>
                     <p className="opacity-75 pt-4 text-lg">
                         Ofrecemos servicios integrales para el crecimiento de su negocio. Nos apasiona ayudarlo a
                         alcanzar sus objetivos y estamos comprometidos con su satisfacción.
                     </p>
                     <CTAButton color="#101828" arrowRotation={180} className="pt-16 hidden sm:flex w-40 mt-10" />
-                </div>
-                <div className="gap-7 flex flex-col mt-16 sm:flex-row sm:flex-wrap sm:justify-center sm:items-start sm:gap-0 sm:w-1/2">
+                </motion.div>
+
+                <motion.div
+                    transition={{ staggerChildren: 0.5 }}
+                    className="gap-7 flex flex-col mt-16 sm:flex-row sm:flex-wrap sm:justify-center sm:items-start sm:gap-0 sm:w-1/2"
+                >
                     {services.map((el, index) => (
                         <Card key={index} data={el} number={index + 1} />
                     ))}
-                </div>
+                </motion.div>
                 {/* <CTAButton color="#101828" arrowRotation={180} className="mx-auto pt-16 sm:hidden " /> */}
             </div>
         </div>
