@@ -74,9 +74,9 @@ const Index = () => {
                 </motion.div>
             </div> */}
             <div className="bg-cream  text-black ">
-                <div className="container mx-auto pb-20 px-5 relative w-full ">
+                <div className="container mx-auto py-20 px-5 relative w-full ">
                     <H2 className={"text-5xl flex items-center"}>
-                        Nos encargamos de todo{" "}
+                        Nos encargamos de todo
                         <div className="w-20">
                             <Star />
                         </div>
