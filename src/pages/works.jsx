@@ -5,10 +5,14 @@ import Star from "@/components/icons/Star"
 import resto from "../../public/img/works/resto.png"
 import foodee from "../../public/img/works/foodee.jpg"
 import Card from "@/components/pages/Works/Card"
+import Head from "next/head"
 
 const Works = ({ data }) => {
     return (
         <Layout>
+            <Head>
+                <title>Sirviendo Soluciones | Sabores Web</title>
+            </Head>
             <div className="bg-cream">
                 <div className="mx-auto container px-4 py-20">
                     <H2 className={"flex items-center sm:text-5xl pt-20"}>

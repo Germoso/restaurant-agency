@@ -4,6 +4,7 @@ import CTAButton from "@/components/CTAButton"
 import H2 from "@/components/StyledComponents/H2"
 import ServicesCard from "@/components/pages/services/ServicesCard"
 import StarShooting from "@/components/icons/StarShooting"
+import Head from "next/head"
 
 const basico = [
     "Hosting Incluido",
@@ -27,6 +28,9 @@ const planPersonalizado = [
 const Services = () => {
     return (
         <Layout className={"bg-cream"} navBarClassName={"text-black"} logoColor={"#000"}>
+            <Head>
+                <title>Sirviendo Soluciones | Sabores Web</title>
+            </Head>
             <div className="container mx-auto text-black px-6 ">
                 <header className="h-screen flex flex-col justify-center items-center">
                     <h1 className="text-5xl sm:text-7xl sm:w-2/3 relative mx-auto text-center">
