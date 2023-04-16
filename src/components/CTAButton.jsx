@@ -11,12 +11,7 @@ const CTAButton = ({ color = "#FFFFFC", arrowRotation = 0, className, size = 32 
                 animate={{ rotate: 360 }}
                 className="absolute"
             >
-                <motion.div
-                    animate={{ rotate: 2000, transition: { duration: 2.5, ease: "circOut" } }}
-                    className="relative"
-                >
-                    <WordCircle color={color} />
-                </motion.div>
+                <WordCircle color={color} />
             </motion.div>
             <div style={{ rotate: `${arrowRotation}deg`, width: size }}>
                 <DownArrow color={color} />

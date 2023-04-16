@@ -11,7 +11,7 @@ export default function Document() {
                 crossorigin="anonymous"
                 referrerpolicy="no-referrer"
             />
-            <body className="overflow-x-hidden">
+            <body className="overflow-x-hidden w-full">
                 <Main />
                 <NextScript />
             </body>
