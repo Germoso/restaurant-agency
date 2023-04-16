@@ -14,8 +14,10 @@ const Index = () => {
                     <div className="mt-6">
                         <span className="mt-2">Copyright© 2023, SaboresWeb. </span>
                         <span>All rights reserved</span>
-                        <div>
-                            <Instagram />
+                        <div className="flex text-2xl mt-2">
+                            <a href="https://www.instagram.com/sirviendosoluciones" target="_blank" rel="noreferrer">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
                         </div>
                     </div>
                 </div>

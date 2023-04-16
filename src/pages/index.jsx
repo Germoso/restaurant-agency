@@ -81,7 +81,12 @@ const Index = () => {
                             <Star />
                         </div>
                     </H2>
-                    <div className="flex flex-col gap-4 mt-4">
+                    <motion.div
+                        viewport={{ once: true }}
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        className="flex flex-col gap-4 mt-4"
+                    >
                         <BenefitsCard
                             title={"Deja los detalles técnicos en nuestras manos"}
                             description={
@@ -113,7 +118,7 @@ const Index = () => {
                             icon={<i class="fas fa-globe"></i>}
                             // className={"lg:row-start-4 lg:row-end-5 lg:col-start-2 lg:col-end-3"}
                         />
-                    </div>
+                    </motion.div>
                     <motion.div
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
