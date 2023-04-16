@@ -2,6 +2,7 @@ import React from "react"
 import Logo from "@/components/icons/Logo"
 import Instagram from "@/components/icons/Instagram"
 import NavLinks from "./NavLinks"
+import SocialMediaLinks from "./SocialMediaLinks"
 
 const Index = () => {
     return (
@@ -14,11 +15,9 @@ const Index = () => {
                     <div className="mt-6">
                         <span className="mt-2">Copyright© 2023, SaboresWeb. </span>
                         <span>All rights reserved</span>
-                        <div className="flex text-2xl mt-2">
-                            <a href="https://www.instagram.com/sirviendosoluciones" target="_blank" rel="noreferrer">
-                                <i class="fa-brands fa-instagram"></i>
-                            </a>
-                        </div>
+                        <ul className="flex text-2xl mt-2 gap-2">
+                            <SocialMediaLinks />
+                        </ul>
                     </div>
                 </div>
                 <hr className="mt-4" />

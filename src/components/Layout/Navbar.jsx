@@ -6,6 +6,7 @@ import RightArrow from "@/components/icons/RightArrow"
 import NavLinks from "./NavLinks"
 import Li from "../StyledComponents/Li"
 import Link from "next/link"
+import SocialMediaLinks from "./SocialMediaLinks"
 
 const Navbar = ({ className, logoColor }) => {
     const [isOpen, setIsOpen] = useState(false)
@@ -54,6 +55,9 @@ const Navbar = ({ className, logoColor }) => {
                                 </Li>
                                 <hr className="w-full" />
                                 <NavLinks noHome />
+                            </ul>
+                            <ul className="flex items-center justify-center  text-base gap-6">
+                                <SocialMediaLinks />
                             </ul>
                         </motion.div>
                     )}
