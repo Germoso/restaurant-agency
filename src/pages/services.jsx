@@ -10,11 +10,11 @@ const basico = [
     "Hosting Incluido",
     "Dominio personalizado incluido",
     "Mantenimiento incluido",
-    "Soporte 24/7",
-    "Sitio web personalizado a medida",
+    "Soporte 24/7 incluido",
+    "Sitio web personalizado a medida ",
     "Adaptado a todos los dispositivos",
     "Seguro",
-    "Modificaciones en cualquier momento",
+    "Modificaciones en cualquier momento incluidas",
 ]
 
 const planPersonalizado = [
@@ -23,6 +23,7 @@ const planPersonalizado = [
     "Seguridad y privacidad avanzada", // Seguridad
     "Asesoría técnica y soporte para la gestión del sitio web",
     "Panel administrativo (opcional)",
+    "Codigo fuente del sitio",
 ]
 
 const Services = () => {

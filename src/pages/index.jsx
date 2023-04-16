@@ -46,10 +46,10 @@ const Index = () => {
                         <H2 className={"auto text-center text-4xl"}>Beneficios</H2>
                         <ul className="ml-5 pt-5 flex flex-col gap-2">
                             <Li>Ahorra tiempo y recursos</Li>
+                            <Li>Actualizaciones regulares y soporte técnico 24/7 totalmente gratuito</Li>
                             <Li>Servicio accesible y de calidad</Li>
                             <Li>Página web a medida, profesional y atractiva</Li>
                             <Li>Mayor visibilidad en línea</Li>
-                            <Li>Actualizaciones regulares y soporte técnico 24/7 totalmente gratuito</Li>
                         </ul>
                         <Button
                             onClick={() => location.assign("/services")}
