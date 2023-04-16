@@ -10,7 +10,7 @@ const BenefitsCard = ({ title, icon, description, className }) => {
             className={`border-b border-primary py-4 px-4  ${className}`}
         >
             <div className="flex items-center gap-2">
-                <div className="w-10 h-10 flex justify-center items-center bg-yellow  rounded-lg  opacity-50">
+                <div className="w-10 h-10 flex justify-center items-center bg-yellow  rounded-lg  opacity-50 ">
                     {icon}
                 </div>
                 <H3 className={"font-semibold"}>{title}</H3>

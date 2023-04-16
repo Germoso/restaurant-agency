@@ -3,11 +3,11 @@ import Navbar from "./Navbar"
 import Footer from "./Footer"
 import { MotionConfig } from "framer-motion"
 
-const Index = ({ children }) => {
+const Index = ({ children, className, navBarClassName, logoColor }) => {
     return (
         <MotionConfig transition={{ duration: 0.4, ease: "circOut" }}>
-            <Navbar />
-            <div className="bg-primary w-full pt-24">{children}</div>
+            <Navbar logoColor={logoColor} className={navBarClassName} />
+            <div className={`w-full ${className}`}>{children}</div>
             <Footer />
         </MotionConfig>
     )

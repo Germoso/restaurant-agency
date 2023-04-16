@@ -9,7 +9,7 @@ const NavLinks = ({ noHome }) => {
                 <a href="/"> Home</a>
             </Li>
             <Li>
-                <a href="/#service">Service</a>
+                <a href="/services">Services</a>
             </Li>
             <Li>
                 <Link href="/works">Work</Link>

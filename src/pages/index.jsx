@@ -15,7 +15,7 @@ import { motion } from "framer-motion"
 
 const Index = () => {
     return (
-        <Layout>
+        <Layout className={"bg-primary"}>
             <Hero />
             <div id="service" className="bg-cream text-black px-5 py-20 h-screen ">
                 <div className="container mx-auto flex flex-col lg:flex-row lg:gap-5 items-center h-full">
@@ -36,7 +36,12 @@ const Index = () => {
                             <Li>Mayor visibilidad en línea</Li>
                             <Li>Actualizaciones regulares y soporte técnico totalmente gratuito</Li>
                         </ul>
-                        <Button className={"self-end mt-5 bg-yellow text-black font-bold"}>Ver mas</Button>
+                        <Button
+                            onClick={() => location.assign("/services")}
+                            className={"self-end mt-5 bg-yellow text-black font-bold"}
+                        >
+                            Ver mas
+                        </Button>
                     </div>
                     <CTAButton color="#000" className={"mt-20 ml-auto lg:hidden"} arrowRotation={135} />
                 </div>
@@ -56,7 +61,7 @@ const Index = () => {
                             <Star />
                         </div>
                     </H2>
-                    <div className="grid-cols-1 grid mt-10">
+                    <div className="flex flex-col gap-4 mt-4">
                         <BenefitsCard
                             title={"Deja los detalles técnicos en nuestras manos"}
                             description={

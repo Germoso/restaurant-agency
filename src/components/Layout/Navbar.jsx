@@ -7,7 +7,7 @@ import NavLinks from "./NavLinks"
 import Li from "../StyledComponents/Li"
 import Link from "next/link"
 
-const Navbar = () => {
+const Navbar = ({ className, logoColor }) => {
     const [isOpen, setIsOpen] = useState(false)
 
     const closeMenu = () => {
@@ -19,10 +19,10 @@ const Navbar = () => {
     }
 
     return (
-        <nav className="absolute top-0 left-0 w-full bg-primary h-24 border-b border-white">
+        <nav className={`absolute top-0 left-0 w-full h-24 ${className}`}>
             <div className="mx-auto h-full container flex  justify-between items-center px-4 sm:px-6">
                 <div className="w-80">
-                    <Logo />
+                    <Logo color={logoColor} />
                 </div>
                 {/* MOBILE MENU */}
                 <AnimatePresence>
@@ -59,7 +59,7 @@ const Navbar = () => {
                     )}
                 </AnimatePresence>
                 {/* DESKTOP MENU */}
-                <ul className="sm:flex items-center justify-center  text-base gap-6 text-white hidden">
+                <ul className="sm:flex items-center justify-center  text-base gap-6 hidden">
                     <NavLinks />
                 </ul>
                 <button className="sm:hidden fixed right-4 z-index-[999]" onClick={openMenu}>
