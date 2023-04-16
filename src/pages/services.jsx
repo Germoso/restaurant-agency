@@ -7,7 +7,7 @@ import StarShooting from "@/components/icons/StarShooting"
 import Head from "next/head"
 
 const basico = [
-    "Sitio Web Personalizado (Gratis)",
+    "Sitio Web a medida (Gratis)",
     "Hosting Incluido",
     "Dominio personalizado incluido",
     "Mantenimiento incluido",
@@ -19,7 +19,7 @@ const basico = [
 ]
 
 const planPersonalizado = [
-    "Sitio Web Personalizado",
+    "Sitio Web a medida",
     "Sitio Web Personalizado y profesional", // Diseño web
     "Adaptado a todos los dispositivos", // Adaptabilidad
     "Seguridad y privacidad avanzada", // Seguridad
@@ -52,7 +52,7 @@ const Services = () => {
                     </H2>
                     <section className="flex flex-col gap-4 w-full justify-center mt-16 sm:flex-row">
                         <ServicesCard features={basico} mostPopular name={"Basico"} price={"25"} montly />
-                        <ServicesCard features={planPersonalizado} name={"Personalizado"} price={""} />
+                        <ServicesCard features={planPersonalizado} name={"Avanzado"} price={""} />
                     </section>
                 </main>
             </div>

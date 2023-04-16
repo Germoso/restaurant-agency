@@ -45,8 +45,9 @@ const Index = () => {
                     >
                         <H2 className={"auto text-center text-4xl"}>Beneficios</H2>
                         <ul className="ml-5 pt-5 flex flex-col gap-2">
+                            <Li>Sitio web a medida gratuito</Li>
                             <Li>Ahorra tiempo y recursos</Li>
-                            <Li>Actualizaciones regulares y soporte técnico 24/7 totalmente gratuito</Li>
+                            <Li>Actualizaciones regulares y soporte técnico 24/7</Li>
                             <Li>Servicio accesible y de calidad</Li>
                             <Li>Página web a medida, profesional y atractiva</Li>
                             <Li>Mayor visibilidad en línea</Li>
