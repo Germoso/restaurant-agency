@@ -51,7 +51,7 @@ const Services = () => {
                         </div>
                     </H2>
                     <section className="flex flex-col gap-4 w-full justify-center mt-16 sm:flex-row">
-                        <ServicesCard features={basico} mostPopular name={"Basico"} price={"25"} montly />
+                        <ServicesCard features={basico} mostPopular name={"Basico"} price={"19"} montly />
                         <ServicesCard features={planPersonalizado} name={"Avanzado"} price={""} />
                     </section>
                 </main>
