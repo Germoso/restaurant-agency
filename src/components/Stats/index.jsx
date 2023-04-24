@@ -8,9 +8,9 @@ const data = [
         plus: true,
     },
     {
-        title: "Clientes Satisfechos",
-        value: 25,
-        plus: true,
+        title: "Clientes Activos",
+        value: 12,
+        plus: false,
     },
     // {
     //     title: "Tiempo Promedio de Entrega (Dias)",

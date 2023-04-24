@@ -13,7 +13,7 @@ const Index = () => {
     const [data, setData] = useState([
         {
             active: false,
-            title: "Isabel Ramos",
+            title: "El Rincón del Chef",
             description:
                 "Estamos encantados con el nuevo sitio web que nos han diseñado. Han hecho un trabajo increíble al capturar la esencia de nuestro restaurante y destacar nuestros platos de manera visual. ¡Altamente recomendados!",
             subtitle: "",
@@ -21,7 +21,7 @@ const Index = () => {
         },
         {
             active: true,
-            title: "Ana García",
+            title: "La Taberna del Puerto",
             description:
                 "Desde el primer acercamiento hasta el lanzamiento del sitio web, el equipo ha sido profesional, amable y muy eficiente. ¡El resultado final ha sido espectacular!",
             subtitle: "",
@@ -29,7 +29,7 @@ const Index = () => {
         },
         {
             active: false,
-            title: "Carlos Hernández",
+            title: "Restaurante Nonno",
             description:
                 "No solo nos proporcionó un sitio web impresionante, sino que también nos ayudó a mejorar nuestra estrategia de marketing digital. ¡Gracias por todo el apoyo y la orientación!",
             subtitle: "",
