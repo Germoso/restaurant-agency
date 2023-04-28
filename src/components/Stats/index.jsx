@@ -2,14 +2,14 @@ import React from "react"
 import StatCard from "./StatCard"
 
 const data = [
-    {
-        title: "Años de Experiencia",
-        value: 2,
-        plus: true,
-    },
+    // {
+    //     title: "Años de Experiencia",
+    //     value: 2,
+    //     plus: true,
+    // },
     {
         title: "Clientes Activos",
-        value: 12,
+        value: 10,
         plus: false,
     },
     // {
