@@ -39,7 +39,7 @@ const Services = () => {
                     <h1 className="text-5xl sm:text-7xl sm:w-2/3 relative mx-auto text-center">
                         Nos adaptamos a tus necesidades
                     </h1>
-                    <p className="text-sm">Obten el sitio web perfecto para tu negocio solo por $25USD</p>
+                    <p className="text-sm">Obten el sitio web perfecto para tu negocio</p>
 
                     <CTAButton color="#000" className={"mx-auto mt-20"} />
                 </header>
