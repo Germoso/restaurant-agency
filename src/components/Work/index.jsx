@@ -6,6 +6,7 @@ import Image from "next/image"
 import restoImg from "../../../public/resto.png"
 import img2 from "../../../public/img-2.png"
 import img3 from "../../../public/img-3.png"
+import Link from "next/link"
 
 const Index = () => {
     return (
@@ -31,13 +32,14 @@ const Index = () => {
                         <Image src={img2} alt="Resto" className="" />
                     </div>
                 </div>
-                <a
-                    href=""
+                <Link
+                    href="/works"
                     className="flex items-center justify-center mx-auto mt-16 hover:text-white hover:underline sm:justify-end gap-2"
                 >
+                    Ver nustros trabajos
                     <i class="fa-solid fa-up-right-from-square"></i>
                     <CTAButton color="#000" className={" -rotate-[145deg] "} size={40} />
-                </a>
+                </Link>
             </div>
         </div>
     )
