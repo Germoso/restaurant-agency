@@ -1,15 +1,18 @@
 import React from "react"
 import Image from "next/image"
 import { motion } from "framer-motion"
+import { useRouter } from "next/router"
 
 const Card = ({ title, img, url, backgroundColor }) => {
+    const router = useRouter()
     return (
         <motion.div
             initial={{ x: "-50%", opacity: 0 }}
             whileInView={{ x: "0", opacity: 1 }}
             viewport={{ once: true }}
             style={{ backgroundColor }}
-            className="text-white w-full rounded-xl flex flex-col overflow-hidden shadow-xl sm:flex-row border-2 border-solid border-black"
+            className="text-white w-full rounded-xl flex flex-col hover:cursor-pointer overflow-hidden shadow-xl sm:flex-row border-2 border-solid border-black"
+            onClick={() => router.push(url)}
         >
             <div className="w-full sm:h-80 relative overflow-hidden sm:w-fit">
                 <Image src={img} alt="imagen" className="w-full h-full object-contain sm:rounded" />
