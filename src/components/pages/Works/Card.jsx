@@ -12,7 +12,7 @@ const Card = ({ title, img, url, backgroundColor }) => {
             viewport={{ once: true }}
             style={{ backgroundColor }}
             className="text-white w-full rounded-xl flex flex-col hover:cursor-pointer overflow-hidden shadow-xl sm:flex-row border-2 border-solid border-black"
-            onClick={() => router.push(url)}
+            onClick={() => window.open(url, "_blank")}
         >
             <div className="w-full sm:h-80 relative overflow-hidden sm:w-fit">
                 <Image src={img} alt="imagen" className="w-full h-full object-contain sm:rounded" />
