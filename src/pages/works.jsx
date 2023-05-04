@@ -4,6 +4,7 @@ import H2 from "@/components/StyledComponents/H2"
 import Star from "@/components/icons/Star"
 import resto from "../../public/img/works/resto.png"
 import foodee from "../../public/img/works/foodee.jpg"
+import img04 from "../../public/img/works/04.png"
 import Card from "@/components/pages/Works/Card"
 import Head from "next/head"
 
@@ -54,12 +55,12 @@ export const getStaticProps = async () => {
                     url: "https://foodee-six.vercel.app/",
                     backgroundColor: "#EDC6B1",
                 },
-                // {
-                //     img: img3,
-                //     title: "Nombre del proyecto",
-                //     url: "URM PAPA",
-                //     backgroundColor: "#7C96AB",
-                // },
+                {
+                    img: img04,
+                    title: "Sabores Del Mundo",
+                    url: "https://sabores-del-mundo.vercel.app/",
+                    backgroundColor: "#e1e2af",
+                },
             ],
         },
     }
